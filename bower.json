@@ -1,0 +1,27 @@
+{
+  "name": "redis4web",
+  "main": "index.js",
+  "homepage": "https://github.com/diogoduailibe/redis4web",
+  "authors": [
+    "Diogo Duailibe da Silva <diogo.duailibe.silva@gmail.com>"
+  ],
+  "description": "Redis Wrapper for WEB Browsers",
+  "keywords": [
+    "redis",
+    "browser"
+  ],
+  "dependencies": {
+    "lodash": "~4.17.4",
+    "requirejs":"~2.3.2",
+    "requirejs-plugins": "~1.0.3"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
