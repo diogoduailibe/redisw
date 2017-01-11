@@ -1,4 +1,5 @@
 {
   "set": {},
-  "flushall":{}
+  "flushall":{},
+  "get":{}
 }

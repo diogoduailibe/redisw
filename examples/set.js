@@ -8,9 +8,10 @@ requirejs.config({
     }
 });
 
-requirejs(['client/main'],function(main){
-    var client = main.createClient();
-    //client.set("string key", x);
-    client.flushall(x);
+requirejs(['client/main'],function(redis){
+    var client = redis.createClient();
+    window.client = client;
+    client.set("string key", "string value");
+    client.get("string key");
 });
 

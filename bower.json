@@ -1,5 +1,5 @@
 {
-  "name": "redis4web",
+  "name": "redisw",
   "main": "index.js",
   "homepage": "https://github.com/diogoduailibe/redis4web",
   "authors": [
@@ -13,7 +13,8 @@
   "dependencies": {
     "lodash": "~4.17.4",
     "requirejs":"~2.3.2",
-    "requirejs-plugins": "~1.0.3"
+    "requirejs-plugins": "~1.0.3",
+    "nsstorage":"0.0.3"
   },
   "license": "MIT",
   "private": true,
