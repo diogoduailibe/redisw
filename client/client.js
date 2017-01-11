@@ -8,15 +8,21 @@ define(function(require) {
     var RedisClient = function(){};
 
     RedisClient.prototype.internal_send_command = function (command_obj) {
+        if (!command_obj['callback'])
+            command_obj['callback'] = RedisClient.prototype.print;
+
         base.sendCommand(command_obj);
+    };
+
+    RedisClient.prototype.print = function(err,reply){
+      utils.print(err,reply);
     };
 
     return {
         RedisClient:RedisClient,
         createClient:function () {
             return new RedisClient();
-        },
-        print: utils.print
+        }
     };
 
     /*function getStorage(type) {
